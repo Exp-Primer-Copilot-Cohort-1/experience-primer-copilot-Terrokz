@@ -1,10 +1,9 @@
-function skillMember() {
-    var member = {
-        name: "John",
-        age: 30,
-        sayName: function () {
-            alert(this.name);
-        }
-    };
-    member.sayName();
+function skillsMember() {
+  return {
+    restrict: 'E',
+    templateUrl: 'templates/skills-member.html',
+    scope: {
+      member: '='
+    }
+  };
 }
